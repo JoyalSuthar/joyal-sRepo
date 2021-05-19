@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Mouse Events
+        </title>
+        <script>
+            function disp_time(){
+                var date = new Date();
+            alert(date);
+
+            }
+            function d_red()
+            {
+                document.body.style.backgroundColor="red";
+            }
+            function d_green()
+            {
+                document.body.style.backgroundColor="green";
+            }
+            function head_yellow()
+            {
+                document.getElementById("head").style.color="Yellow";
+            }
+            function head_black()
+            {
+                document.getElementById("head").style.color="black";
+            }
+            function d_d() 
+            {
+                document.body.style.backgroundColor="white";
+                
+            }
+            function exit() {
+                
+                alert("Goodbye pal !!!");
+            }
+        </script>
+    </head>
+    <body onunload="exit();">
+        <center>
+            <h2 id="head" onmouseover="head_yellow();" onmouseout="head_black();">This is heading</h2>
+            </br></br>
+
+            Find time
+        <input type="button" name="date" value="click here !" onclick="disp_time();">
+        </br></br>
+        Backgroun color:
+        <input type="button" id="red" name="red" value="red" onclick="d_red();">
+        <input type="button" id="green" name="green" value="Green" onclick="d_green()">
+        <input type="button" id="default" name="green" value="default !" onclick="d_d()">
+        </center>
+    
+        
+    </body>
+</html>
